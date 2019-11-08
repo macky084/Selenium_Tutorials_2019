@@ -43,19 +43,6 @@ public class Locators {
 		driver1.findElement(By.xpath("//input[@type='submit']")).click();
 		
 		
-		System.setProperty("webdriver.gecko.driver","C:\\Users\\MOHAN\\Desktop\\Drivers\\geckodriver.exe");
-		WebDriver driver2 = new FirefoxDriver();
-		driver2.get("https://www.facebook.com/");
-		/*
-		 * driver2.findElement(By.xpath("//input[@type='text' and @name='firstname']")).
-		 * sendKeys("MOhan");
-		 * driver2.findElement(By.xpath("//input[@type='text' and @name='lastname']")).
-		 * sendKeys("Singh");
-		 * driver2.findElement(By.xpath("//button[@name='websubmit']")).click();
-		 */
 		
-		driver2.findElement(By.xpath("//input[@name='email']")).sendKeys("mohanssingh84@gmail.com");
-		driver2.findElement(By.xpath("//input[@name='pass']")).sendKeys("IPL2015@aa");
-		driver2.findElement(By.xpath("//input[@type='submit']")).click();
 	}
 }
