@@ -24,7 +24,7 @@ public class Locators {
 		 */
 		
 		driver.findElement(By.xpath("//input[@name='email']")).sendKeys("mohanssingh84@gmail.com");
-		driver.findElement(By.xpath("//input[@name='pass']")).sendKeys("IPL2015@aa");
+		driver.findElement(By.cssSelector("*[id=\"pass\"]")).sendKeys("IPL2015@aa");
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
 		
 		
@@ -39,7 +39,7 @@ public class Locators {
 		 * ; driver1.findElement(By.xpath("//input[@type='submit']")).click();
 		 */
 		driver1.findElement(By.xpath("//input[@name='email']")).sendKeys("mohanssingh84@gmail.com");
-		driver1.findElement(By.xpath("//input[@name='pass']")).sendKeys("IPL2015@aa");
+		driver1.findElement(By.xpath("//*[@id=\"pass\"]")).sendKeys("IPL2015@aa");
 		driver1.findElement(By.xpath("//input[@type='submit']")).click();
 		
 		
